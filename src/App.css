@@ -1,0 +1,166 @@
+body{
+    background-color: #0e2338;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container{
+    width: 90vw;
+    max-width: 550px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(254, 249, 249, 0.1);
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 25px;
+
+
+}
+
+input[type="text"]{
+  width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+.add-btn{
+    width: 20% ;
+    padding: 13px;
+    margin-left: 4px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF9800;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+}
+ 
+.add-btn:hover{
+    background-color: #FB8C00;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn{
+    padding: 15px 15px;
+    width: 120px;
+    border: none;
+    margin: 2px;
+    color: #000000;
+    border-radius: 4px;
+    font-weight: 750;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.todo{
+    background-color:#007bff;
+}
+
+.todo:hover{
+    background-color: #0056b3;
+}
+
+.complete{
+    background-color: #28a745;
+    
+}
+
+.complete:hover{
+    background-color: #218838;
+
+}
+.todo-container {
+    margin-top: 20px;
+
+  }
+  
+  .btn.active {
+    border: 2px solid #95a2f5;
+    background-color: #0056b3; 
+    color: #fff;
+  }
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .todo-item p {
+    margin: 0;
+    color: #fff;
+    flex-grow: 1;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .delete,
+  .check {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .check {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .delete:hover {
+    background-color: #c82333;
+  }
+  
+  .check:hover {
+    background-color: #218838;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+    
+    input[type="text"] {
+        width: 96%;
+    }
+
+    .add-btn {
+        width: 100%; 
+        margin-top: 10px;
+    }
+
+    
+}
